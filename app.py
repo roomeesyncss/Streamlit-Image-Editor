@@ -2,10 +2,9 @@ import streamlit as st
 from PIL import Image, ImageFilter, ImageOps, ImageEnhance
 import cv2
 import numpy as np
-import os
 
 def main():
-    st.set_page_config(page_title="St Image processing app:Interactive Image Editing", layout="wide")
+    st.set_page_config(page_title="Streamlit Image Processing App: Interactive Image Editing", layout="wide")
     st.title("Streamlit Interactive Image Editing")
     st.subheader("Upload an Image")
     ufile = st.file_uploader("Drag and drop file here or", type=["jpg", "png", "jpeg"], accept_multiple_files=False)
